@@ -1,0 +1,34 @@
+#parent {
+    /* フォントの種類 */
+    font-family: "Arial", "Meiryo", sans-serif;
+    /* フォントサイズを指定 */
+    font-size: 20px;
+    /* 文字の位置 */
+    text-align: center;
+}
+
+#child {
+    /* Google Fontsを指定 */
+    font-family: "Josefin Sans", sans-serif;
+   /* フォントサイズを指定 */
+    font-size: 200%;
+    /* 文字の空間 */
+    letter-spacing: 1.2em;
+    /* 文字の影 */
+    text-shadow: 2px 2px 2px peachpuff;
+    /* 文字に下線を引く*/
+    border-bottom: solid 3px rgb(115,115,114);
+}
+
+#basic p {
+    /* 太字 */
+    font-weight: bold;
+}
+
+.skyblue {
+    color: skyblue;
+}
+
+.pink {
+    color: rgb(255,192,203);
+}
