@@ -1,0 +1,109 @@
+h1, p, body {
+   /* 上下左右余白 */
+    margin: 0;
+}
+
+p, a {
+    /* フォントサイズ */
+    font-size: 20px;
+}
+
+header {
+    /* 下の余白 */
+    margin-bottom: 20px;
+    /* 背景色 */
+    background-color: rgb(244, 79, 79);
+    /* 中央揃え */
+    text-align: center;
+}
+
+h1 {
+    /* 文字色 */
+    color:rgb(255, 255, 255);
+}
+
+main {
+    margin: 10px;
+}
+
+#parent {
+    /* Flexコンテナ */
+    display: flex;
+    /* 一番左と一番右のアイテムも含め、均等な間隔で配置する */
+    justify-content: space-around;
+}
+
+.contents {
+    /* 線（太さ3px、実線、色rgb(238, 204, 204)）*/
+    border: solid 3px rgb(238, 204, 204);
+    /* 幅は親要素の25% */
+    flex-basis: 25%;
+    /* 要素内の余白は上下10px、左右15px */
+    padding: 10px 15px;
+    /* 要素外の余白は上下20px、左右0 */
+    margin: 20px 0px;
+    /* 要素の中央揃え */
+    text-align: center;
+}
+
+h2 {
+    /* フォントサイズを25px */
+    font-size: 25px;
+    /* 線（太さ3px、点線、色rgb(236, 122, 122)） */
+    border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before {
+    /* 「●」記号 */
+    content: "●";
+    /* 色rgb(239, 111, 139) */
+    color: rgb(239, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter {
+    /* 太字 */
+    font-weight: bold;
+    /* 文字色はrgb(97, 206, 249) */
+    color: rgb(97, 206, 249);
+}
+
+.contents img {
+    /* marginは上下10px、左右0 */
+    margin: 10px 0px;
+    /* 幅は70% */
+    width: 70%;
+}
+
+footer {
+    /* 背景色はrgb(244, 79, 79) */
+    background-color: rgb(244, 79, 79);
+    /* 中身の要素が中央揃え */
+    text-align: center;
+}
+
+a {
+    /* 文字色rgb(255, 255, 255) */
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    /* 文字色がrgb(193, 234, 251) */
+    color: rgb(193, 234, 251);
+}
+
+a:hover {
+    /* 文字色がrgb(245, 178, 168) */
+    color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width:768px){
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }   
+    #parent {
+        flex-direction:column;
+    }
+}
